@@ -21,9 +21,6 @@ namespace Nico
     {
         public static void Main(string[] args)
         {
-
-
-
             Console.WriteLine("What is happening here world?");
             Console.ReadLine();
         }
