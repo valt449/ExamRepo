@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test.csproj", "{B56484DA-0490-4750-9289-8AC175285AF3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enum", "Enum\Enum.csproj", "{A0E5DBB0-EDED-4D9F-BF12-AB4CE6F296E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Struct", "Struct\Struct.csproj", "{0ACCCC82-6FC7-4756-A506-BFFDE91346D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +17,13 @@ Global
 		{B56484DA-0490-4750-9289-8AC175285AF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B56484DA-0490-4750-9289-8AC175285AF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B56484DA-0490-4750-9289-8AC175285AF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0E5DBB0-EDED-4D9F-BF12-AB4CE6F296E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0E5DBB0-EDED-4D9F-BF12-AB4CE6F296E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0E5DBB0-EDED-4D9F-BF12-AB4CE6F296E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0E5DBB0-EDED-4D9F-BF12-AB4CE6F296E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ACCCC82-6FC7-4756-A506-BFFDE91346D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ACCCC82-6FC7-4756-A506-BFFDE91346D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ACCCC82-6FC7-4756-A506-BFFDE91346D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ACCCC82-6FC7-4756-A506-BFFDE91346D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
