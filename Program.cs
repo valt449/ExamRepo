@@ -6,18 +6,8 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace Nico
 {
-
-    public struct something
-    {
-        public string Name { get; set; }
-
-        public something(string name)
-        {
-            Name = name;
-        }
-    }
-
-    internal class Program
+	    
+    public class Program
     {
         public static void Main(string[] args)
         {
