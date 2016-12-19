@@ -41,7 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Create and use types\ClassHierachiesDemo.cs" />
     <Compile Include="Create and use types\EnumDemo.cs" />
+    <Compile Include="Create and use types\GenericsDemo.cs" />
+    <Compile Include="Create and use types\InterfacesDemo.cs" />
+    <Compile Include="Create and use types\ReflectionDemo.cs" />
     <Compile Include="Create and use types\Struct.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />

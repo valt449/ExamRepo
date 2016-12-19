@@ -1,18 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net.NetworkInformation;
-using System.Runtime.InteropServices;
-using System.Security.Cryptography.X509Certificates;
+﻿using dsfdfs.Create_and_use_types;
 
-namespace Nico
+namespace dsfdfs
 {
-	    
-    public class Program
-    {
-        public static void Main(string[] args)
-        {
-            Console.WriteLine("What is happening here world?");
-            Console.ReadLine();
-        }
-    }
+
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+			
+
+			
+			//Reflection.Demo();
+			
+			
+			StructStruct.Demo();
+			//Enum.Demo();
+		}
+
+		
+
+	}
 }

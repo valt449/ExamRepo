@@ -1,17 +1,27 @@
 ﻿using System;
 
-/// <summary>
-/// Summary description for Class1
-/// </summary>
-public class StructDemo
+namespace dsfdfs.Create_and_use_types
 {
-	public struct Struct
+	/// <summary>
+	/// Summary description for Class1
+	/// </summary>
+
+	public struct StructStruct
 	{
 		public string Name { get; set; }
 
-		public Struct(string name)
+		public StructStruct(string name)
 		{
 			Name = name;
 		}
+
+		public static void Demo()
+		{
+			var structDemo = new StructStruct();
+			structDemo.Name = "CoolName";
+			Console.WriteLine(structDemo.Name);
+		}
+
 	}
 }
+

@@ -1,14 +1,16 @@
-﻿using System;
-
-/// <summary>
-/// Summary description for Class1
-/// </summary>
-public class EnumDemo
+﻿namespace dsfdfs.Create_and_use_types
 {
-	public Class1()
+	/// <summary>
+	/// Summary description for Class1
+	/// </summary>
+	public class EnumDemo
 	{
-		//
-		// TODO: Add constructor logic here
-		//
+
+
+		public static void Demo()
+		{
+
+		}
+
 	}
 }
