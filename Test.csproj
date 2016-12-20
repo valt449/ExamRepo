@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Create and use types\AbstractAndVirtual.cs" />
+    <Compile Include="Create and use types\AccessModifiers.cs" />
     <Compile Include="Create and use types\ClassHierachiesDemo.cs" />
     <Compile Include="Create and use types\EnumDemo.cs" />
     <Compile Include="Create and use types\GenericsDemo.cs" />
