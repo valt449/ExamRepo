@@ -16,16 +16,6 @@ namespace dsfdfs.Create_and_use_types
 {
 	public class Reflection
 	{
-		internal class something
-		{
-			
-		}
-
-		 protected class MyClass : something
-		{
-			
-		}
-
 		public static void Demo()
 		{
 			Type t = Type.GetType("dsfdfs.Create_and_use_types.ReflectionDemo");

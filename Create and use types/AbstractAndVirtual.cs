@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace dsfdfs.Create_and_use_types
 {
-	class AbstractAndVirtual
+	public class AbstractAndVirtual
 	{
 		public abstract class myBase
 		{
@@ -34,7 +34,7 @@ namespace dsfdfs.Create_and_use_types
 		public class MyBase
 		{
 			//This will not compile because you cannot have an abstract method in a non-abstract class
-			public abstract void YouMustImplement();
+			//public abstract void YouMustImplement();
 
 			public virtual void YouCanOverride()
 			{

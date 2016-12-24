@@ -1,7 +1,8 @@
 ﻿using dsfdfs.Create_and_use_types;
 using System;
+using System.Collections.Generic;
 using System.Reflection;
-using OtherNamespace;
+using ExamPrep;
 
 namespace dsfdfs
 {
@@ -11,7 +12,9 @@ namespace dsfdfs
 		public static void Main(string[] args)
 		{
 			
-		
+			LinQ.MyMethod();
+			//DictionaryClass.MyMethod();
+			//IO.IOMethod();
 			//Reflection.Demo();
 			//StructStruct.Demo();
 			//Enum.Demo();
