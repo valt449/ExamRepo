@@ -49,8 +49,9 @@
     <Compile Include="Create and use types\InterfacesDemo.cs" />
     <Compile Include="Create and use types\ReflectionDemo.cs" />
     <Compile Include="Create and use types\Struct.cs" />
-    <Compile Include="Implement data access\Dictionary.cs" />
-    <Compile Include="Implement data access\IO.cs" />
+    <Compile Include="Debug and security%28and validation%29\Regex.cs" />
+    <Compile Include="Implement data access\Collections.cs" />
+    <Compile Include="Implement data access\Reflection.cs" />
     <Compile Include="Implement data access\LinQ.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
@@ -67,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
+    <Folder Include="Manage program flow\" />
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="obj\Release\" />
   </ItemGroup>

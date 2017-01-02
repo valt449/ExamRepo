@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
+using System.Text.RegularExpressions;
 using ExamPrep;
 
 namespace dsfdfs
@@ -12,9 +13,10 @@ namespace dsfdfs
 		public static void Main(string[] args)
 		{
 			
-			LinQ.MyMethod();
+			RegexDemo.MyMethod();
+			//LinQ.MyMethod();
 			//DictionaryClass.MyMethod();
-			//IO.IOMethod();
+			//Reflection.MyMethod();
 			//Reflection.Demo();
 			//StructStruct.Demo();
 			//Enum.Demo();

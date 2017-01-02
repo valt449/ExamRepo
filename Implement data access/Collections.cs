@@ -9,7 +9,6 @@ namespace ExamPrep
 {
 	class DictionaryClass
 	{
-
 		public static void MyMethod()
 		{
 			var dictionary = new Dictionary<int, string>()

@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace ExamPrep
 {
-	class IO
+	class Reflection
 	{
-		public static void IOMethod()
+		public static void MyMethod()
 		{
 			DirectoryInfo directoryInfo = new DirectoryInfo(@"c:\");
 
@@ -26,6 +26,5 @@ namespace ExamPrep
 			}
 			Console.ReadLine();
 		}
-	
 	}
 }
