@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Dynamic;
 using System.IO;
@@ -14,48 +15,51 @@ namespace dsfdfs
 	{
 		public static void MyMethod()
 		{
-			//Get some data 
-			HttpWebRequest webRequestData = (HttpWebRequest)WebRequest.CreateHttp("https://msdn.microsoft.com/en-us/library/h5845fdz(v=vs.110).aspx");
-			HttpWebResponse responseData = (HttpWebResponse)webRequestData.GetResponse();
-
-			Stream recievedStream = responseData.GetResponseStream();
+			string url = "https://msdn.microsoft.com/en-us/library/h5845fdz(v=vs.110).aspx";
 			string data;
-			using (StreamReader sr = new StreamReader(recievedStream, Encoding.UTF8))
+			//Get some data 
+			HttpWebRequest webRequestData = WebRequest.CreateHttp(url); //Create the request
+			using (HttpWebResponse responseData = (HttpWebResponse)webRequestData.GetResponse()) //Send the reqest and recieve the response
 			{
-				data = sr.ReadToEnd();
+				Stream recievedStream = responseData.GetResponseStream();
 
-				//Console.WriteLine(test);
-				//Console.WriteLine(data);
+				using (StreamReader sr = new StreamReader(recievedStream, Encoding.UTF8))
+				{
+					data = sr.ReadToEnd();
+
+					//Console.WriteLine(test);
+					//Console.WriteLine(data);
+				}
 			}
-
-			//Find pattern with regex
-			var pattern = @"[A-Z]{20,25}";
-			MatchCollection matches; //The collection contains zero or more System.Text.RegularExpressions.Match objects.
-			List<string> Words = new List<string>();
-
-			Regex findRegex = new Regex(pattern, RegexOptions.IgnoreCase | RegexOptions.Compiled);
-			matches = findRegex.Matches(data);
 			
+			//Find pattern with regex
+			var pattern = @"[A-Z]{30,35}";
+			MatchCollection matches; //The collection contains zero or more System.Text.RegularExpressions.Match objects.
+			Regex findRegex = new Regex(pattern, RegexOptions.IgnoreCase | RegexOptions.Compiled); //Compiled is quicker to use, but takes longer to construct 
+			matches = findRegex.Matches(data);//Add matches to matches collection
 
 			//************* WAYS OF ITERATE DATA ************
 
 			int i = 0;
 			int z = 0;
 			int r = 0;
+			List<string> Words = new List<string>();
 
-			Console.WriteLine("Word with characters ranging from 20-25");
-			//****** 1.  (AND ADD TO A LIST) *********
-			Console.WriteLine($"\n1. Iteration\n");
+			Console.WriteLine($"Word with characters ranging from 30-35 from the page: \n{url}");
+
+			//****** 1.  (AND CREATE THE LIST) *********
+			Console.WriteLine($"\n1.  (AND CREATE THE LIST)\n");
+
 
 			foreach (Match item in matches)
 			{
 				i++;
 				Words.Add(item.ToString());
-				Console.WriteLine($"{i}: " + item); 
+				Console.WriteLine($"{i}: " + item);
 			}
 
 			//****** 2.  USING LINQ WITH MULTIPLE LINES OF CODE *********
-			Console.WriteLine($"\n2. Iteration \n");
+			Console.WriteLine($"\n2.  USING LINQ WITH MULTIPLE LINES OF CODE \n");
 
 			Words.ForEach(x =>
 			{
@@ -64,13 +68,25 @@ namespace dsfdfs
 			});
 
 			//****** 3.  USING LINQ WITH MULTIPLE LINES OF CODE (alternative for 2.) *********
-			Console.WriteLine($"\n2. Iteration\n");
+			Console.WriteLine($"\n3. USING LINQ WITH MULTIPLE LINES OF CODE (alternative for 2.)\n");
 
 			Words.ForEach(delegate (String s)
 			{
 				r++;
 				Console.WriteLine($"{r}: " + s);
 			});
+
+			//****** 4.  USING LINQ WITH MULTIPLE LINES OF CODE (alternative for 2.) *********
+			Console.WriteLine($"\n4. USING LINQ WITH SINGLE LINE OF CODE\n");
+			Words.ForEach(x => Console.WriteLine(x));
+			
+			//****** 5. USING THE STATIC REGEX CLASS. *********
+			Console.WriteLine($"\n5. Using Static Regex class\n");
+
+			foreach (Match item in Regex.Matches(data, pattern, RegexOptions.IgnoreCase)) //Stativ regex class
+			{
+				Console.WriteLine(item);
+			}
 		}
 	}
 }

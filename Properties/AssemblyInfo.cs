@@ -7,12 +7,12 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 
 [assembly: AssemblyTitle("dsfdfs")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("This is a assembly with example projects for the Microsoft 70-483 exam")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("WhatUp")]
 [assembly: AssemblyProduct("dsfdfs")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("Yes")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 

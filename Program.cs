@@ -12,8 +12,9 @@ namespace dsfdfs
 	{
 		public static void Main(string[] args)
 		{
-			
-			RegexDemo.MyMethod();
+			FormattingStrings.MyMethod();
+			//DebugTrace.MyMethod();
+			//RegexDemo.MyMethod();
 			//LinQ.MyMethod();
 			//DictionaryClass.MyMethod();
 			//Reflection.MyMethod();
