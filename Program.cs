@@ -13,6 +13,7 @@ namespace dsfdfs
 	{
 		public static void Main(string[] args)
 		{
+			//Dictionary_soren_.MyMethod();
 			//PerformanceCounterDemo.MyMethod();
 			//RNG.MyMethod();
 			//Eventlog.MyMethod();

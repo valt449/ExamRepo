@@ -71,6 +71,7 @@
     <Compile Include="Debug and security%28and validation%29\Regex.cs" />
     <Compile Include="Debug and security%28and validation%29\RNG.cs" />
     <Compile Include="Implement data access\Collections.cs" />
+    <Compile Include="Implement data access\Dictionary%28soren%29.cs" />
     <Compile Include="Implement data access\Reflection.cs" />
     <Compile Include="Implement data access\LinQ.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
