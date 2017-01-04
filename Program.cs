@@ -12,6 +12,8 @@ namespace dsfdfs
 	{
 		public static void Main(string[] args)
 		{
+			
+			//Eventlog.MyMethod();
 			FormattingStrings.MyMethod();
 			//DebugTrace.MyMethod();
 			//RegexDemo.MyMethod();
