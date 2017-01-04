@@ -67,7 +67,9 @@
     <Compile Include="Create and use types\Struct.cs" />
     <Compile Include="Debug and security%28and validation%29\DebugTrace.cs" />
     <Compile Include="Debug and security%28and validation%29\Eventlog.cs" />
+    <Compile Include="Debug and security%28and validation%29\PerformanceCounter.cs" />
     <Compile Include="Debug and security%28and validation%29\Regex.cs" />
+    <Compile Include="Debug and security%28and validation%29\RNG.cs" />
     <Compile Include="Implement data access\Collections.cs" />
     <Compile Include="Implement data access\Reflection.cs" />
     <Compile Include="Implement data access\LinQ.cs" />

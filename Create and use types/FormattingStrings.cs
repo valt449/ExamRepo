@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -48,6 +50,8 @@ namespace dsfdfs
 																				  // NegativeNumber = leftalign, PositiveNumber = RightAlign.
 
 			Console.WriteLine($"\n*** STRING.FORMAT() -> Controlling spacing + cultureinfo ***");
+			Console.WriteLine("Curent culture is '{0}'",CultureInfo.CurrentCulture);
+			
 			double value = 123456.32;
 			string[] Culturenames ={"en-US", "fr-FR", "de-DE", "es-ES", "da-DK"};
 			Console.WriteLine();
