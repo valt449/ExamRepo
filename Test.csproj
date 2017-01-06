@@ -48,8 +48,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
@@ -71,9 +75,12 @@
     <Compile Include="Debug and security%28and validation%29\Regex.cs" />
     <Compile Include="Debug and security%28and validation%29\RNG.cs" />
     <Compile Include="Implement data access\Collections.cs" />
+    <Compile Include="Implement data access\DeserializeDemo.cs" />
     <Compile Include="Implement data access\Dictionary%28soren%29.cs" />
     <Compile Include="Implement data access\Reflection.cs" />
     <Compile Include="Implement data access\LinQ.cs" />
+    <Compile Include="Implement data access\SerializeDemo.cs" />
+    <Compile Include="Implement data access\StringbuildAHash.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
@@ -86,6 +93,7 @@
   <ItemGroup>
     <None Include="bin\Debug\dsfdfs.vshost.exe.manifest" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />

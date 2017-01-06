@@ -3,3 +3,5 @@ C:\Users\z6nii\Source\Repos\ExamRepo\bin\Debug\dsfdfs.pdb
 C:\Users\z6nii\Source\Repos\ExamRepo\obj\Debug\dsfdfs.exe
 C:\Users\z6nii\Source\Repos\ExamRepo\obj\Debug\dsfdfs.pdb
 C:\Users\z6nii\Source\Repos\ExamRepo\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\Users\z6nii\Source\Repos\ExamRepo\bin\Debug\Newtonsoft.Json.dll
+C:\Users\z6nii\Source\Repos\ExamRepo\bin\Debug\Newtonsoft.Json.xml

@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Text.RegularExpressions;
 using dsfdfs;
 using ExamPrep;
+using Newtonsoft;
 
 namespace dsfdfs
 {
@@ -13,6 +14,9 @@ namespace dsfdfs
 	{
 		public static void Main(string[] args)
 		{
+			StringbuildAHash.Hashbuild(); //Søren
+			//SerializeDemo.MyMethod();
+			//DeserializeDemo.MyMethod();
 			//Dictionary_soren_.MyMethod();
 			//PerformanceCounterDemo.MyMethod();
 			//RNG.MyMethod();
