@@ -14,7 +14,7 @@ using Newtonsoft;
 
 namespace dsfdfs
 {
-	class SerializeDemo
+	public class SerializeDemo
 	{
 		public static void MyMethod()
 		{
@@ -23,7 +23,6 @@ namespace dsfdfs
 
 			//** XML **
 			var XMLDemo = new SerializeToXML("FirstDemo"); //Instanciate object to serialize
-
 
 			var xmlSerializer = new XmlSerializer(typeof(SerializeToXML)); //Instanciate the XMlSerializer
 			//FileStream ffs = new FileStream(directory + "FirstDemo.xml", FileMode.OpenOrCreate, FileAccess.Write, FileShare.Read); // Alternative creation of file and stream
@@ -79,11 +78,11 @@ namespace dsfdfs
 		}
 	}
 	// Use of XML attributeds
-	[XmlRoot]
+	[XmlRoot(Namespace = "www.kmd.dk")]
 	public class SerializeToXMLWithXMLRoot //OBS Message is an attribute
 	{
 		
-		[XmlElement]
+		[XmlElement (ElementName = "Juhuu")]
 		public string Name { get; set; }
 		[XmlAttribute]
 		protected int Age { get; }

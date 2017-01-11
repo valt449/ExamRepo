@@ -12,10 +12,8 @@ using System.Xml.Serialization;
 
 namespace dsfdfs.Implement_data_access
 {
-		
 	class DeserializeDemo
 	{
-		
 		public static void MyMethod()
 		{
 			string directory = @"C:\Users\z6nii\OneDrive - KMD\code\Created text files from ExamPrep\";
@@ -36,18 +34,15 @@ namespace dsfdfs.Implement_data_access
 			var fs2 = new FileStream(directory + "FirstDemoWithDataContract.xml", FileMode.Open);
 			var DeserializedXMLWtihDataContract = (SerializeToXMLWithDataContract)Deserializer2.ReadObject(fs2);
 			
-
 			//** From JSON **
 			var deser = new DataContractJsonSerializer(typeof(SerializeToXMLWithDataContract));
 			var fs3 = new FileStream(directory + "FirstJson.json", FileMode.Open);
 			var DeserializedJson = (SerializeToXMLWithDataContract)deser.ReadObject(fs3);
 			
-
 			//** Binary **
 			var bfor = new BinaryFormatter();
 			var ffs4 = new FileStream(directory + "FirstBinary.bin",FileMode.Open);
 			var DeserializedBinary = (SerializeToXML)bfor.Deserialize(ffs4);
-			
 
 			//**Write all objects to console: 
 			Console.WriteLine("{3,-35}{0,-35} {1,-25}{2,-25}\n","Message", "AgeProp", "NameProp","ObjectName");
@@ -56,7 +51,6 @@ namespace dsfdfs.Implement_data_access
 			Console.WriteLine("{3,-35}{0,-35} {1,-25}{2,-25}", DeserializedXMLWtihDataContract.Message, 5, "No name beacause of protectionlevel", nameof(DeserializedXMLWtihDataContract));
 			Console.WriteLine("{3,-35}{0,-35} {1,-25}{2,-25}", DeserializedJson.Message, 5, "No name beacause of protectionlevel", nameof(DeserializedJson));
 			Console.WriteLine("{3,-35}{0,-35} {1,-25}{2,-25}", DeserializedBinary.Message, DeserializedBinary.Age, DeserializedBinary.Name, nameof(DeserializedBinary));
-
 		}
 	}
 }

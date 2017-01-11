@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ExamPrep
 {
-	class Reflection
+	class ReflectionDemo
 	{
 		public static void MyMethod()
 		{

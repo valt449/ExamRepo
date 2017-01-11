@@ -61,6 +61,32 @@ namespace dsfdfs
 			var culture = new CultureInfo(Culturenames[i]);
 			Console.WriteLine(string.Format(culture,"{0,-15} {1,-30:D} {2,-30:n}", Culturenames[i], DateTime.Today, value));
 			}
+			
+			var date = new DateTime(2017, 12, 25, 22, 12, 59, DateTimeKind.Local); //DateTime.Now;
+			Console.WriteLine("\nShort format\n");
+			Console.WriteLine("\nStandard output: "+date);
+			Console.WriteLine("\nDate: {0:d}   Time: {0:t}",date); //short
+			Console.WriteLine("Date: {0:dd/MM/yyyy}   Time: {0:HH:ss}", date); //short
+
+			var us = new CultureInfo("en-US");
+			Console.WriteLine(string.Format(us,"Date: {0:dd-MM-yyyy}   Time: {0:hh:mm:ss tt}", date)); //us culture am/pm
+			Console.WriteLine(string.Format(us, "Date: {0:dd-MM-yyyy}   Time: {0:HH:mm:ss}", date)); //us culture am/pm
+
+
+			Console.WriteLine("\nLong format\n");
+
+			Console.WriteLine("Date: {0:dd. MMM yyyy}   Time: {0:HH:mm:ss}", date); //medium
+			Console.WriteLine("Date: {0:D}   Time: {0:T}", date); //Long
+			Console.WriteLine("Date: {0:ddd MMMM yyyy}   Time: {0:HH:mm:ss}", date); //Long
+			Console.WriteLine("Date: {0:dddd MMMM yyyy}   Time: {0:HH:mm:ss}", date); //Long
+			Console.WriteLine("Date: {0:d M y}   Time: {0:H:m:s}", date); //Long
+
+
+
+
+
+
+
 		}
 	}
 }

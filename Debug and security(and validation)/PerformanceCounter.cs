@@ -9,6 +9,7 @@ namespace dsfdfs
 { 
 	public class PerformanceCounterDemo
 	{
+		public int Age { get; set; }
 		public static void MyMethod()
 		{
 		PerformanceCounter PerformanceTest = new PerformanceCounter();
@@ -22,8 +23,11 @@ namespace dsfdfs
 				PerformanceTest.Increment();
 				Console.WriteLine("DemoCounter incremented!");
 			}
+			
+
 
 
 		}
+
 	}
 }

@@ -44,8 +44,8 @@ namespace AccessModifiers
 		{
 			AssemblyOneClassOne demo = new AssemblyOneClassOne();
 			demo.PublicName = "succces";
-			//demo.PrivateName = "failure";
-			//demo.ProtectedName = "failure";
+			demo.PrivateName = "failure";
+			demo.ProtectedName = "failure";
 			demo.ProtectedInternalName = "succces";
 			demo.InternalName = "succces";
 		}
@@ -59,7 +59,7 @@ namespace AccessModifiers
 		{
 			AssemblyOneClassFour demo = new AssemblyOneClassFour(); //****OBS***** Instance of AssemblyOneClassFour - Class FOUR!!
 			demo.PublicName = "succces";
-			//demo.PrivateName = "failure";
+			demo.PrivateName = "failure";
 			demo.ProtectedName = "sucess"; //Because this is a derived class 
 			demo.ProtectedInternalName = "succces";
 			demo.InternalName = "succces";
