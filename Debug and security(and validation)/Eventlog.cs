@@ -30,6 +30,13 @@ namespace dsfdfs
 			var Elog = new EventLog();
 			Elog.Source = "MySecoundSource";
 			Elog.WriteEntry($"I added a nice message to the {Elog.Log.ToString()} log with {Elog.Source.ToString()} as source");
+
+
+			EventLogTraceListener dmeo = new EventLogTraceListener("FirstLog");
+			Trace.Listeners.Add(dmeo);
+
+			Trace.WriteLine("Hold nu op igen ");
+
 		}
 	}
 }

@@ -18,10 +18,21 @@ namespace dsfdfs
 
 	public class Program 
 	{
+		
 		public static void Main(string[] args)
 		{
 
-			IEnumerable<string> demo = new []{"Whatup", "MoFos"};
+			int one = 21;
+			int two = 23;
+			int[] array1 = new int[4];
+
+			array1[0] = one;
+			array1[1] = two;
+
+
+			var test = array1[0];
+
+			//IEnumerable<string> demo = new []{"Whatup", "MoFos"};
 
 
 
@@ -31,7 +42,7 @@ namespace dsfdfs
 			//var somthing4 = demo is ICollection;
 
 			//Console.WriteLine(somthing4);
-			
+
 			//foreach (string s in demo)
 			//{
 			//	Console.WriteLine(s);
@@ -42,7 +53,7 @@ namespace dsfdfs
 			//	Console.WriteLine(s3);
 			//}
 
-			
+
 
 
 			//	int test2 = 0;
@@ -59,8 +70,8 @@ namespace dsfdfs
 			//var demo = test3 as PerformanceCounterDemo;
 			//var demo2 = ((PerformanceCounterDemo)test3).
 
-
-
+			ConsoleDemo.MyMethod();
+			//Interfaces.MyMethod();
 			//EventhandlerDemo.MyMethod();
 			//EncryptDecrypt.MyMethod();
 			//StringbuildAHash.Hashbuild(); //Søren
