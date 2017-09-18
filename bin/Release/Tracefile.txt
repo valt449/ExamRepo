@@ -1,0 +1,3 @@
+Fail: 
+Here was a Trace.Assert called (not called if TRACE is undefined)
+00:00:00: Trace Stopped {0}
